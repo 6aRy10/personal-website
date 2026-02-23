@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Ayush Rastogi</title>
+    <meta name="description" content="Ayush Rastogi — writing and contact." />
+    
+    <link rel="icon" type="image/jpeg" href="./favicon.jpg" />
+    <link rel="shortcut icon" type="image/jpeg" href="./favicon.jpg" />
+    <link rel="apple-touch-icon" href="./favicon.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@400&family=Merriweather:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./hackathons-style.css" />
+    <link rel="stylesheet" href="./awards-style.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <div class="triple-comma">,,,</div>
+        <a class="brand" href="./">Ayush Rastogi</a>
+
+        <nav class="nav">
+          <a href="https://www.linkedin.com/in/a6r6z/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.instagram.com/a6r6z/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://x.com/idoknowball" target="_blank" rel="noreferrer">X</a>
+        </nav>
+
+        <button class="sigil" type="button" aria-label="Menu" onclick="scrollToBio()">
+          <span class="sigil__shape" aria-hidden="true"></span>
+        </button>
+      </header>
+
+      <main class="layout">
+        <section class="left">
+          <a href="#" onclick="openThoughtsModal(event)">Thoughts and Writings</a>
+          <a href="#" onclick="openProjectsModal(event)">Projects and Hackathons</a>
+          <a href="#" onclick="openAwardsModal(event)">Awards and Memberships</a>
+          <a href="#" onclick="openQuotesModal(event)">Favourite Quotes and Tweets</a>
+          <a href="#" onclick="openMoviesModal(event)">Movies and Books</a>
+        </section>
+
+        <aside class="right" id="about">
+          <div class="bio-image">
+            <img src="./queensboro-bridge.webp" alt="Profile" />
+          </div>
+          <p class="bio">
+            Hi, I'm <a href="#" onclick="openImageModal(event, './Screenshot 2026-02-20 205348.png'); return false;" style="cursor: pointer;">Ayush</a>.
+          </p>
+
+          <p class="bio">
+            I was born in <a href="https://en.wikipedia.org/wiki/Moradabad" target="_blank" rel="noreferrer">Moradabad</a> on the birthday of a <a href="https://www.hinduamerican.org/ram-navami" target="_blank" rel="noreferrer">Hindu deity</a>.
+          </p>
+
+          <p class="bio">
+            A series of wonderful and unique moments has shaped my life since.
+          </p>
+
+          <p class="bio">
+            Early on, I fell, upside down, off my home's balcony. However, I just fractured my legs and broke my femur. For a while, not walking again was a real possibility. But I managed to walk again and, even, run faster. Strangely, the accident also improved my stamina and long-distance running.
+          </p>
+
+          <p class="bio">
+            For 7 years, I attended <a href="https://en.wikipedia.org/wiki/St._George%27s_College,_Mussoorie" target="_blank" rel="noreferrer">St. George's College</a>, a boarding school, located in a hill station named <a href="https://en.wikipedia.org/wiki/Mussoorie" target="_blank" rel="noreferrer">Mussoorie</a>.
+          </p>
+
+          <p class="bio">
+            During this time, I got heavily involved in Table Tennis and Quizzing. I made it to nationals and states for 5 years in both fields, winning numerous awards. The most fun I had was in competing on National Television for 2 consecutive seasons at <a href="https://en.wikipedia.org/wiki/Ultimate_Sports_Quiz" target="_blank" rel="noreferrer">USQ</a>.
+          </p>
+
+          <p class="bio">
+            What makes that funnier is that the school barely gave us internet access, and personal electronics were not a thing (I did sneak in a phone during my last year there, though, subjecting myself to a potential $1500 fine. They couldn't catch me).
+          </p>
+
+          <p class="bio">
+            In 2023, I scored 98.6%, the highest % in the institute's 66-year-old history, in the <a href="https://en.wikipedia.org/wiki/Council_for_the_Indian_School_Certificate_Examinations" target="_blank" rel="noreferrer">ICSE</a> grade 10 examinations. I was in the top 10 in my state and likely in the top 100 in the country. Thanks to my phone!
+          </p>
+
+          <p class="bio">
+            2 months into the junior year of high school, I decided to leave the place because of a few things that had radicalised me. Forever grateful to Parv, Sidhant, Ashesh, Soham, and Shaurya for being there since Day 1 and still being there!
+          </p>
+
+          <p class="bio">
+            In the 2 years that followed, I completed my high school studies in a local school in Moradabad. My attendance rate was tittle, and I mostly self-studied and earned some bucks.
+          </p>
+
+          <p class="bio">
+            I did marketing for <a href="https://en.wikipedia.org/wiki/Newell%27s_Old_Boys" target="_blank" rel="noreferrer">Newell's Old Boys</a>, an International football club, competed internationally in <a href="https://www.naqt.com/" target="_blank" rel="noreferrer">NAQT tournaments</a>, went viral on <a href="https://filmora.wondershare.com/twitter/most-viewed-videos-on-twitter.html" target="_blank" rel="noreferrer">Football Twitter</a>, featured on ESPN, stood Top 100/10M+ players in <a href="https://fantasy.premierleague.com/" target="_blank" rel="noreferrer">FPL</a>, conducted research on marketing with <a href="https://mgmt.wharton.upenn.edu/profile/shuny/" target="_blank" rel="noreferrer">Shun Yiu</a>, studied for a few olympiads, lead a state NGO, fundraised over $25,000, and worked on issues surrounding sustainability, access to high-quality education, and improving employment rates in the city (<a href="https://www.hindustantimes.com/environment/uttar-pradesh-city-moradabad-is-world-s-2nd-noisiest-city-delhi-kolkata-also-on-un-noise-pollution-list-101648348708558.html" target="_blank" rel="noreferrer">which is one of the most polluted and noisiest in the world</a>).
+          </p>
+
+          <p class="bio">
+            Interactions with <a href="https://www.linkedin.com/in/esatbayar" target="_blank" rel="noreferrer">Esat Bayar</a> convinced me to apply to study abroad and helped me realise what I wish to do in the future.
+          </p>
+
+          <p class="bio">
+            For now, I am at <a href="https://www.unibocconi.eu/" target="_blank" rel="noreferrer">Bocconi University</a> and <a href="https://www.hec.edu/" target="_blank" rel="noreferrer">HEC Paris</a>, taking courses in Data Science, Government and History (I, still, mostly self-study). Being a first-generation student, I am very grateful to my Mom and Dad for giving me this opportunity.
+          </p>
+
+          <p class="bio">
+            I adore the top-tier material world, playing pickleball, teddy bears, travelling, making comedy films, forecasting future outcomes, and cooking for (and with) people I love.
+          </p>
+
+          <p class="bio">
+            I admire <a href="https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/shah-rukh-khan-now-a-billionaire-bollywood-star-overtakes-taylor-swift-to-become-worlds-richest-entertainer-with-1-4-billion-net-worth/articleshow/124264124.cms" target="_blank" rel="noreferrer">Shah Rukh Khan</a>, <a href="https://wrytin.com/rishabhhemani/5-reasons-why-messi-is-more-than-just-a-footballer-jw0z77y8" target="_blank" rel="noreferrer">Lionel Messi</a>, <a href="https://kladarian.medium.com/novak-djokovic-the-misfit-876d1cf498ce" target="_blank" rel="noreferrer">Novak Djokovic</a>, <a href="https://herbertlui.net/sam-altman-on-self-belief-and-willfulness/" target="_blank" rel="noreferrer">Sam Altman</a>, <a href="https://nav.al/" target="_blank" rel="noreferrer">Naval Ravikant</a>, a few sportswomen, female celebrities and female models.
+          </p>
+        </aside>
+      </main>
+
+      <div class="intentNote">
+        This site is in a perpetual update mode. Welcome!
+      </div>
+
+      <footer class="footer" id="contact">
+        <div class="footerRow">
+          <div class="triple-comma">,,,</div>
+          <span><span id="y"></span> © Ayush Rastogi</span>
+
+        </div>
+        <div class="footer-message">
+          My inboxes are always open
+        </div>
+        <div class="footer-clock">
+          <div class="clock-time" id="europeClock"></div>
+          <div class="clock-message">(will change time zones soon)</div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Quotes Modal -->
+    <div id="quotesModal" class="modal">
+      <div class="modal-content">
+        <div class="window-controls">
+          <div class="window-control close" onclick="closeQuotesModal(event)" title="Close"></div>
+          <div class="window-control maximize" onclick="toggleFullscreen(event)" title="Maximize"></div>
+        </div>
+        <div class="modal-body">
+          <h2>Favourite Quotes and Tweets</h2>
+          <div class="quotes-list">
+            <div>
+              <h3>Shah Rukh Khan</h3>
+              <p>"Very often people will tell you that this is not the right thing, this is too big, unachievable, or this is not of your status. But if I take two minutes to think about where I came from and where I stand today, everything feels achievable"</p>
+              <p>"Don't become a philosopher before you are rich. Do well in your life. Achieve every material gain that you want; please don't give up on that. But also be incorruptible and honest."</p>
+            </div>
+            <div>
+              <h3>Surya Midha</h3>
+              <p>"The price of getting everything you want is becoming someone you don't quite recognize."</p>
+            </div>
+            <div>
+              <h3>Aristotle</h3>
+              <p>"Love is composed of a single soul inhabiting two bodies."</p>
+            </div>
+            <div>
+              <h3>Naval Ravikant</h3>
+              <p>"If you don't lie awake at night thinking about it, you don't want it badly enough"</p>
+              <p>"A taste of freedom can make you unemployable"</p>
+            </div>
+            <div>
+              <h3>George Bernard Shaw</h3>
+              <p>"The reasonable man adapts himself to the world; the unreasonable one persists in his attempts to adapt the world to himself."</p>
+            </div>
+            <div>
+              <h3>Novak Djokovic</h3>
+              <p>"The winner is one who believes in victory more."</p>
+            </div>
+            <div>
+              <h3>Peter Thiel</h3>
+              <p>"We live in a world, where courage is in less supply than genius."</p>
+              <p>"Winning is better than losing, but everybody loses when war isn't one worth fighting."</p>
+            </div>
+            <div>
+              <h3>Sonya Parker</h3>
+              <p>"Fitting in allows you to blend in with everyone else, but being different allows you to be yourself, to be unique and to be more creative."</p>
+            </div>
+            <div>
+              <h3>Judy Garland</h3>
+              <p>"Always be a first-rate version of yourself, instead of a second-rate version of somebody else."</p>
+            </div>
+            <div>
+              <h3>Aesop</h3>
+              <p>"No act of kindness, no matter how small, is ever wasted."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects and Hackathons Modal -->
+    <div id="projectsModal" class="modal">
+      <div class="modal-content">
+        <div class="window-controls">
+          <div class="window-control close" onclick="closeProjectsModal(event)" title="Close"></div>
+          <div class="window-control maximize" onclick="toggleProjectsFullscreen(event)" title="Maximize"></div>
+        </div>
+        <div class="modal-body">
+          <h2>Projects and Hackathons</h2>
+          <div class="projects-list">
+            <!-- Hackathons Section -->
+            <div class="project-category">
+              <div class="project-item">
+                <img src="./b3758415-856b-4be5-bbdc-f6964ebe2de6.avif" alt="Zero2Demo Hackathon - Frida Project" />
+                <h4>2nd @ Zero To Demo hackathon</h4>
+                <p>Build multimodal healthcare voice-first agents that do 24/7 post-discharge follow-up, triage, and documentation so nurses can manage 5× more patients without burning out.</p>
+                <p>
+                  <a href="https://techsavvy.media/en/ai-talents-built-real-products-from-scratch-in-just-36-hours/" target="_blank" rel="noreferrer">Featured in the news</a> • 
+                  <a href="https://github.com/6aRy10/Frida" target="_blank" rel="noreferrer">Code</a>
+                </p>
+              </div>
+              <div class="project-item">
+                <img src="./2202b614-9096-48b5-953a-b364de74a718.avif" alt="Light x Lovable x QuantumBlack Finance Hackathon - Gitto Project" />
+                <h4>Finalist @ Light x Lovable x QuantumBlack, AI by McKinsey Finance Hackathon</h4>
+                <p>Created a cash intelligence/forecasting engine</p>
+                <p>
+                  <a href="https://gitto-deploy.vercel.app/" target="_blank" rel="noreferrer">You can try it out here!</a>
+                </p>
+              </div>
+              <div class="project-item">
+                <img src="./9f4d4b48-e923-4590-9b5b-4f323025719f.avif" alt="Agentic Payments Hackathon with Stripe" />
+                <h4>Best Demo and Notable Project @ Agentic Payments Hackathon with Stripe</h4>
+                <p>Created an autonomous bill-splitting and payment collection tool, allowing restaurant owners to receive immediate payments. It minimises unpaid shares by allowing diners to split their bills and pay their portions directly.</p>
+                <div class="project-images-row">
+                  <img src="./WhatsApp Image 2026-02-21 at 18.45.53.jpeg" alt="Payment tool screenshot 1" onclick="openImageModal(event, './WhatsApp Image 2026-02-21 at 18.45.53.jpeg')" style="cursor: pointer;" />
+                  <img src="./WhatsApp Image 2026-02-21 at 18.44.21.jpeg" alt="Payment tool screenshot 2" onclick="openImageModal(event, './WhatsApp Image 2026-02-21 at 18.44.21.jpeg')" style="cursor: pointer;" />
+                </div>
+              </div>
+              <div class="project-item">
+                <img src="./612550419_17891868597401371_100088621730120488_n.jpg" alt="Buildarena Hackathon at Techarena" />
+                <h4>Buildarena Hackathon at <a href="https://techarena.se/" target="_blank" rel="noreferrer">Techarena</a> - Scandinavia's biggest Tech Conference</h4>
+                <p>Nordic countries and Nordics are so, so cool! Got flown out to Stockholm and created a blockchain powered digital executor that detects when someone passes away and securely transfers technical access to their digital assets (royalties, crypto, subscriptions, NFTs, accounts) to their beneficiaries. It bypasses the "MFA deadlock" (2FA, biometrics, locked devices) through continuous liveness verification and encrypted key orchestration.</p>
+                <p>
+                  <a href="https://youtube.com/shorts/-mD479uzQoo" target="_blank" rel="noreferrer">Completely fucked the demo</a> (couldn't include everything under a min). Thanks to the <a href="https://www.growmesh.io/" target="_blank" rel="noreferrer">Mesh</a> guys for helping me shoot. 
+                  <a href="./GITTO - Make the Hardest Day Easier.pptx" download>You can learn more here!</a>
+                </p>
+              </div>
+              <!-- Add more hackathon items here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thoughts and Writings Modal -->
+    <div id="thoughtsModal" class="modal">
+      <div class="modal-content">
+        <div class="window-controls">
+          <div class="window-control close" onclick="closeThoughtsModal(event)" title="Close"></div>
+          <div class="window-control maximize" onclick="toggleThoughtsFullscreen(event)" title="Maximize"></div>
+        </div>
+        <div class="modal-body">
+          <h2>Thoughts and Writings</h2>
+          <div class="thoughts-list">
+            <div class="thought-item">
+              <img src="./231943-825-auto.jpeg" alt="Early thoughts on Italy and some of Europe" />
+              <h4><a href="#" onclick="openArticleModal(event, 'italy-europe')" style="color: inherit; text-decoration: none; cursor: pointer;">Early thoughts on Italy and some of Europe</a></h4>
+              <p class="thought-subtitle"><em>from someone fresh off the boat</em></p>
+            </div>
+            <!-- Add more thought items here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Article Modal (for full writings) -->
+    <div id="articleModal" class="modal">
+      <div class="modal-content">
+        <div class="window-controls">
+          <div class="window-control close" onclick="closeArticleModal(event)" title="Close"></div>
+          <div class="window-control maximize" onclick="toggleArticleFullscreen(event)" title="Maximize"></div>
+        </div>
+        <div class="modal-body">
+          <div id="articleContent">
+            <!-- Article content will be loaded here -->
+            <h2 id="articleTitle"></h2>
+            <p class="thought-subtitle" id="articleSubtitle"></p>
+            <div id="articleText">
+              <p>Your writing content will appear here...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+      <div class="modal-content image-modal-content">
+        <div class="window-controls">
+          <div class="window-control close" onclick="closeImageModal(event)" title="Close"></div>
+          <div class="window-control maximize" onclick="toggleImageFullscreen(event)" title="Maximize"></div>
+        </div>
+        <div class="modal-body image-modal-body">
+          <img id="modalImage" src="" alt="Full size image" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Awards Modal -->
+    <div id="awardsModal" class="modal">
+      <div class="modal-content">
+        <div class="window-controls">
+          <div class="window-control close" onclick="closeAwardsModal(event)" title="Close"></div>
+          <div class="window-control maximize" onclick="toggleAwardsFullscreen(event)" title="Maximize"></div>
+        </div>
+        <div class="modal-body">
+          <h2>Awards and Memberships</h2>
+          <div class="awards-list">
+            <div class="award-item">
+              <h3>19 World Rank - International Economic Olympiad OT</h3>
+            
+            </div>
+            <div class="award-item">
+              <h3>Silver Award - International Business Olympiad</h3>
+      
+            </div>
+            <div class="award-item">
+              <h3>$2300 Grant - Tech European Foundation</h3>
+            
+            </div>
+            <div class="award-item">
+              <h3>Responsible Citizen Award - Indian Achievers Forum of Excellence Records</h3>
+              
+            </div>
+            <div class="award-item">
+              <h3>Bronze Award - Queen's Commonwealth Essay Competition</h3>
+
+            </div>
+            <div class="award-item">
+              <h3>20+ Awards in Quiz Bowl - USQ, Big League, NAQT, and other competitions</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Movies and Books Modal -->
+    <div id="moviesModal" class="modal">
+      <div class="modal-content">
+        <div class="window-controls">
+          <div class="window-control close" onclick="closeMoviesModal(event)" title="Close"></div>
+          <div class="window-control maximize" onclick="toggleMoviesFullscreen(event)" title="Maximize"></div>
+        </div>
+        <div class="modal-body">
+          <h2>Movies and Books</h2>
+          <div class="movies-section">
+            <div class="movies-categories">
+              <div class="movie-category">
+                <h3>Bollywood</h3>
+                <div class="movie-list">
+                  <div class="movie-item">
+                    <a href="https://www.imdb.com/title/tt0995031/" target="_blank" rel="noreferrer">Bhool Bhulaiyaa</a>
+                  </div>
+                  <div class="movie-item">
+                    <a href="https://www.imdb.com/title/tt0347473/" target="_blank" rel="noreferrer">Main Hoon Na</a>
+                  </div>
+                  <div class="movie-item">
+                    <a href="https://www.imdb.com/title/tt2338151/" target="_blank" rel="noreferrer">PK</a>
+                  </div>
+                  <div class="movie-item">
+                    <a href="https://tv.apple.com/us/movie/dhol/umc.cmc.1n8k1igl7zzgbfurlsuzzv3mt" target="_blank" rel="noreferrer">Dhol</a>
+                  </div>
+                  <div class="movie-item">
+                    <a href="https://tv.apple.com/us/movie/bhagam-bhag/umc.cmc.6o6zvar5y6axvx978kwmon3bm" target="_blank" rel="noreferrer">Bhagam Bhag</a>
+                  </div>
+                  <div class="movie-item">
+                    <a href="https://www.imdb.com/title/tt1024941/" target="_blank" rel="noreferrer">Dhamaal</a>
+                  </div>
+                  <div class="movie-item">
+                    <a href="https://tv.apple.com/be/movie/de-dana-dan/umc.cmc.76gfs8tl3homaw5piwemiv6je" target="_blank" rel="noreferrer">De Dana Dan</a>
+                  </div>
+                </div>
+              </div>
+              <div class="movie-category">
+                <h3>Hollywood</h3>
+                <div class="movie-list">
+                  <div class="movie-item">
+                    <a href="https://www.imdb.com/title/tt0468569/" target="_blank" rel="noreferrer">The Dark Knight</a>
+                  </div>
+                  <div class="movie-item">
+                    <a href="https://www.imdb.com/title/tt0114369/" target="_blank" rel="noreferrer">Seven</a>
+                  </div>
+                  <div class="movie-item">
+                    <a href="https://www.imdb.com/title/tt1670345/" target="_blank" rel="noreferrer">Now You See Me</a>
+                  </div>
+                  <div class="movie-item">
+                    <a href="https://www.imdb.com/title/tt0111161/" target="_blank" rel="noreferrer">The Shawshank Redemption</a>
+                  </div>
+                  <div class="movie-item">
+                    <a href="https://www.imdb.com/title/tt0119654/" target="_blank" rel="noreferrer">Men in Black</a> <span class="movie-note">(need Men in White now)</span>
+                  </div>
+                  <div class="movie-item">
+                    <a href="https://www.imdb.com/title/tt22898462/" target="_blank" rel="noreferrer">The Conjuring: Last Rites</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="books-section">
+              <h3>Books</h3>
+              <div class="book-list">
+                <div class="book-item">
+                  <p>Magical Words of the Wizard of Ads</p>
+                </div>
+                <div class="book-item">
+                  <p>Poor Charlie's Almanack</p>
+                </div>
+                <div class="book-item">
+                  <p>The Sovereign Individual</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const y = document.getElementById("y");
+      if (y) y.textContent = new Date().getFullYear();
+
+      // Europe Clock
+      function updateEuropeClock() {
+        const clockElement = document.getElementById('europeClock');
+        if (clockElement) {
+          const now = new Date();
+          // Convert to Europe timezone (using Central European Time)
+          const europeTime = new Date(now.toLocaleString("en-US", {timeZone: "Europe/Paris"}));
+          const hours = String(europeTime.getHours()).padStart(2, '0');
+          const minutes = String(europeTime.getMinutes()).padStart(2, '0');
+          const seconds = String(europeTime.getSeconds()).padStart(2, '0');
+          clockElement.textContent = `${hours}:${minutes}:${seconds} CET`;
+        }
+      }
+
+      // Update clock immediately and then every second
+      updateEuropeClock();
+      setInterval(updateEuropeClock, 1000);
+
+      // Scroll to bio function
+      function scrollToBio() {
+        const bioSection = document.getElementById('about');
+        if (bioSection) {
+          bioSection.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start' 
+          });
+        }
+      }
+
+      function openThoughtsModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('thoughtsModal');
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeThoughtsModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('thoughtsModal');
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+
+      function toggleThoughtsFullscreen(event) {
+        event.preventDefault();
+        const modal = document.getElementById('thoughtsModal');
+        const modalContent = modal.querySelector('.modal-content');
+        
+        if (modalContent.classList.contains('maximized')) {
+          // Restore to normal size
+          modalContent.classList.remove('maximized');
+          modalContent.style.width = 'auto';
+          modalContent.style.maxWidth = '600px';
+          modalContent.style.height = 'auto';
+          modalContent.style.maxHeight = '80vh';
+          modalContent.style.margin = '5% auto';
+        } else {
+          // Maximize to full viewport
+          modalContent.classList.add('maximized');
+          modalContent.style.width = '95%';
+          modalContent.style.maxWidth = '95%';
+          modalContent.style.height = '95vh';
+          modalContent.style.maxHeight = '95vh';
+          modalContent.style.margin = '2.5vh auto';
+        }
+      }
+
+      function openProjectsModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('projectsModal');
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeProjectsModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('projectsModal');
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+
+      function toggleProjectsFullscreen(event) {
+        event.preventDefault();
+        const modal = document.getElementById('projectsModal');
+        const modalContent = modal.querySelector('.modal-content');
+        
+        if (modalContent.classList.contains('maximized')) {
+          // Restore to normal size
+          modalContent.classList.remove('maximized');
+          modalContent.style.width = 'auto';
+          modalContent.style.maxWidth = '600px';
+          modalContent.style.height = 'auto';
+          modalContent.style.maxHeight = '80vh';
+          modalContent.style.margin = '5% auto';
+        } else {
+          // Maximize to full viewport
+          modalContent.classList.add('maximized');
+          modalContent.style.width = '95%';
+          modalContent.style.maxWidth = '95%';
+          modalContent.style.height = '95vh';
+          modalContent.style.maxHeight = '95vh';
+          modalContent.style.margin = '2.5vh auto';
+        }
+      }
+
+      function openAwardsModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('awardsModal');
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeAwardsModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('awardsModal');
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+
+      function toggleAwardsFullscreen(event) {
+        event.preventDefault();
+        const modal = document.getElementById('awardsModal');
+        const modalContent = modal.querySelector('.modal-content');
+        
+        if (modalContent.classList.contains('maximized')) {
+          // Restore to normal size
+          modalContent.classList.remove('maximized');
+          modalContent.style.width = 'auto';
+          modalContent.style.maxWidth = '600px';
+          modalContent.style.height = 'auto';
+          modalContent.style.maxHeight = '80vh';
+          modalContent.style.margin = '5% auto';
+        } else {
+          // Maximize to full viewport
+          modalContent.classList.add('maximized');
+          modalContent.style.width = '95%';
+          modalContent.style.maxWidth = '95%';
+          modalContent.style.height = '95vh';
+          modalContent.style.maxHeight = '95vh';
+          modalContent.style.margin = '2.5vh auto';
+        }
+      }
+
+      function openQuotesModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('quotesModal');
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeQuotesModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('quotesModal');
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+
+      function minimizeModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('quotesModal');
+        const modalContent = modal.querySelector('.modal-content');
+        
+        if (modalContent.classList.contains('minimized')) {
+          // Restore to normal size
+          modalContent.classList.remove('minimized');
+          modalContent.style.transform = 'scale(1)';
+          modalContent.style.width = 'auto';
+          modalContent.style.maxWidth = '600px';
+          modalContent.style.height = 'auto';
+          modalContent.style.maxHeight = '90vh';
+        } else {
+          // Minimize to small size
+          modalContent.classList.add('minimized');
+          modalContent.style.transform = 'scale(0.3)';
+          modalContent.style.width = '200px';
+          modalContent.style.maxWidth = '200px';
+          modalContent.style.height = '100px';
+          modalContent.style.maxHeight = '100px';
+          modalContent.style.position = 'fixed';
+          modalContent.style.bottom = '20px';
+          modalContent.style.right = '20px';
+          modalContent.style.top = 'auto';
+          modalContent.style.left = 'auto';
+          modalContent.style.margin = '0';
+        }
+      }
+
+      function toggleFullscreen(event) {
+        event.preventDefault();
+        const modal = document.getElementById('quotesModal');
+        const modalContent = modal.querySelector('.modal-content');
+        
+        if (modalContent.classList.contains('maximized')) {
+          // Restore to normal size
+          modalContent.classList.remove('maximized');
+          modalContent.style.width = 'auto';
+          modalContent.style.maxWidth = '600px';
+          modalContent.style.height = 'auto';
+          modalContent.style.maxHeight = '80vh';
+          modalContent.style.margin = '5% auto';
+        } else {
+          // Maximize to full viewport
+          modalContent.classList.add('maximized');
+          modalContent.style.width = '95%';
+          modalContent.style.maxWidth = '95%';
+          modalContent.style.height = '95vh';
+          modalContent.style.maxHeight = '95vh';
+          modalContent.style.margin = '2.5vh auto';
+        }
+      }
+
+      // Movies Modal Functions
+      function openMoviesModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('moviesModal');
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeMoviesModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('moviesModal');
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+
+      function toggleMoviesFullscreen(event) {
+        event.preventDefault();
+        const modal = document.getElementById('moviesModal');
+        const modalContent = modal.querySelector('.modal-content');
+        
+        if (modalContent.classList.contains('maximized')) {
+          // Restore to normal size
+          modalContent.classList.remove('maximized');
+          modalContent.style.width = 'auto';
+          modalContent.style.maxWidth = '600px';
+          modalContent.style.height = 'auto';
+          modalContent.style.maxHeight = '80vh';
+          modalContent.style.margin = '5% auto';
+        } else {
+          // Maximize to full viewport
+          modalContent.classList.add('maximized');
+          modalContent.style.width = '95%';
+          modalContent.style.maxWidth = '95%';
+          modalContent.style.height = '95vh';
+          modalContent.style.maxHeight = '95vh';
+          modalContent.style.margin = '2.5vh auto';
+        }
+      }
+
+      // Close modal when clicking outside
+      document.addEventListener('click', function(event) {
+        const thoughtsModal = document.getElementById('thoughtsModal');
+        const projectsModal = document.getElementById('projectsModal');
+        const awardsModal = document.getElementById('awardsModal');
+        const quotesModal = document.getElementById('quotesModal');
+        const moviesModal = document.getElementById('moviesModal');
+        if (event.target === thoughtsModal) {
+          closeThoughtsModal(event);
+        }
+        if (event.target === projectsModal) {
+          closeProjectsModal(event);
+        }
+        if (event.target === awardsModal) {
+          closeAwardsModal(event);
+        }
+        if (event.target === quotesModal) {
+          closeQuotesModal(event);
+        }
+        if (event.target === moviesModal) {
+          closeMoviesModal(event);
+        }
+        const imageModal = document.getElementById('imageModal');
+        if (event.target === imageModal) {
+          closeImageModal(event);
+        }
+      });
+
+      // Prevent event propagation for links
+      document.addEventListener('click', function(event) {
+        if (event.target.tagName === 'A') {
+          event.stopPropagation();
+        }
+      });
+
+      // Image Modal Functions
+      function openImageModal(event, imageSrc) {
+        event.preventDefault();
+        event.stopPropagation();
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+        modalImage.src = imageSrc;
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeImageModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('imageModal');
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+
+      function toggleImageFullscreen(event) {
+        event.preventDefault();
+        const modal = document.getElementById('imageModal');
+        const modalContent = modal.querySelector('.image-modal-content');
+        
+        if (modalContent.classList.contains('maximized')) {
+          // Restore to normal size
+          modalContent.classList.remove('maximized');
+          modalContent.style.width = 'auto';
+          modalContent.style.maxWidth = '90%';
+          modalContent.style.height = 'auto';
+          modalContent.style.maxHeight = '90vh';
+          modalContent.style.margin = '5% auto';
+        } else {
+          // Maximize to full viewport
+          modalContent.classList.add('maximized');
+          modalContent.style.width = '95%';
+          modalContent.style.maxWidth = '95%';
+          modalContent.style.height = '95vh';
+          modalContent.style.maxHeight = '95vh';
+          modalContent.style.margin = '2.5vh auto';
+        }
+      }
+
+      // Article Modal Functions
+      function openArticleModal(event, articleId) {
+        event.preventDefault();
+        event.stopPropagation();
+        const modal = document.getElementById('articleModal');
+        const articleTitle = document.getElementById('articleTitle');
+        const articleSubtitle = document.getElementById('articleSubtitle');
+        const articleText = document.getElementById('articleText');
+        
+        // Set content based on article ID
+        if (articleId === 'italy-europe') {
+          articleTitle.textContent = 'Early thoughts on Italy and some of Europe';
+          articleSubtitle.innerHTML = '<em>from someone fresh off the boat</em>';
+          articleText.innerHTML = '<p>Work in progress!</p>';
+        }
+        
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeArticleModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('articleModal');
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+
+      function toggleArticleFullscreen(event) {
+        event.preventDefault();
+        const modal = document.getElementById('articleModal');
+        const modalContent = modal.querySelector('.modal-content');
+        
+        if (modalContent.classList.contains('maximized')) {
+          // Restore to normal size
+          modalContent.classList.remove('maximized');
+          modalContent.style.width = 'auto';
+          modalContent.style.maxWidth = '600px';
+          modalContent.style.height = 'auto';
+          modalContent.style.maxHeight = '80vh';
+          modalContent.style.margin = '5% auto';
+        } else {
+          // Maximize to full viewport
+          modalContent.classList.add('maximized');
+          modalContent.style.width = '95%';
+          modalContent.style.maxWidth = '95%';
+          modalContent.style.height = '95vh';
+          modalContent.style.maxHeight = '95vh';
+          modalContent.style.margin = '2.5vh auto';
+        }
+      }
+
+      // Close article modal when clicking outside
+      document.addEventListener('click', function(event) {
+        const articleModal = document.getElementById('articleModal');
+        if (event.target === articleModal) {
+          closeArticleModal(event);
+        }
+      });
+    </script>
+  </body>
+</html>

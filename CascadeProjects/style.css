@@ -1,0 +1,1005 @@
+:root {
+  --padX: 72px;
+  --padTop: 26px;
+  --hair: rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* NOTEBOOK BACKGROUND */
+body {
+  margin: 0;
+  font-family: "Wix Madefor Text", sans-serif;
+  color: #000;
+  background: repeating-linear-gradient(
+    to bottom,
+    #ffffff 0px,
+    #ffffff 24px,
+    rgba(0, 0, 0, 0.05) 25px
+  );
+}
+
+/* Layout base */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* HEADER */
+.topbar {
+  padding: var(--padTop) var(--padX) 10px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Brand */
+.brand {
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Nav */
+.nav {
+  margin-left: auto;
+  display: flex;
+  gap: 22px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Ring icon */
+.sigil {
+  margin-left: 12px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.sigil__shape {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 999px;
+}
+
+/* Main layout */
+.layout {
+  padding: 10px var(--padX) 60px;
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 90px;
+}
+
+/* SECTION LINKS */
+.section-link {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  color: rgb(0, 0, 0);
+
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 6px 0;
+}
+
+.section-link:hover {
+  opacity: 0.6;
+}
+
+/* Right bio */
+.right {
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.bio-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bio-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #000;
+}
+
+.bio a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.bio a:hover {
+  text-decoration: underline;
+}
+
+.bio {
+  margin-bottom: 18px;
+  font-family: "Wix Madefor Text", sans-serif;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+/* Intent note */
+.intentNote {
+  text-align: center;
+  margin: 70px auto 50px;
+  max-width: 520px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid var(--hair);
+  padding: 18px var(--padX) 30px;
+}
+
+.footerRow {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* REAL TRIPLE COMMA */
+.triple-comma {
+  font-style: italic;
+  font-size: 26px;
+  letter-spacing: -2px;
+  transform: perspective(200px) rotateX(8deg);
+  filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.25))
+    drop-shadow(0 4px 6px rgba(0, 0, 0, 0.15));
+}
+
+/* Social icons */
+.social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.socialLink {
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.socialLink svg {
+  display: block;
+  fill: rgb(0, 0, 0);
+}
+
+.socialLink:hover {
+  border-color: rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Awards Modal Styles */
+.awards-modal {
+  max-width: 500px;
+  max-height: 70vh;
+}
+
+.awards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.award-item {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  transition: all 0.3s ease;
+}
+
+.award-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.award-item h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.award-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.award-item a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.award-item a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsive for awards modal */
+@media (max-width: 768px) {
+  .awards-modal {
+    width: 95%;
+    max-width: 95%;
+    margin: 2% auto;
+    max-height: 85vh;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+  .awards-list {
+    gap: 16px;
+  }
+  
+  .award-item {
+    padding: 14px;
+  }
+  
+  .award-item h3 {
+    font-size: 16px;
+  }
+  
+  .award-item p {
+    font-size: 13px;
+  }
+}
+
+/* Window Controls */
+.window-controls {
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.window-control {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.window-control.close {
+  background-color: #ff5f57;
+}
+
+.window-control.close:hover {
+  background-color: #ff3b30;
+}
+
+.window-control.minimize {
+  background-color: #ffbd2e;
+}
+
+.window-control.minimize:hover {
+  background-color: #ff9500;
+}
+
+.window-control.maximize {
+  background-color: #28ca42;
+}
+
+.window-control.maximize:hover {
+  background-color: #00a832;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: transparent;
+  margin: auto;
+  padding: 0;
+  border: none;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-body {
+  background-color: white;
+  padding: 20px;
+  border-radius: 0;
+  margin: 0;
+  border: none;
+}
+
+.quotes-list {
+  background-color: white;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quotes-list div {
+  background-color: white;
+  border: none;
+  padding: 10px 0;
+  margin: 0;
+  border-bottom: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #666;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.modal-body {
+  padding: 30px;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.modal-body .articles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.modal-body .article-preview {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #000;
+  border-radius: 12px;
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.modal-body .article-preview:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.modal-body .article-preview-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+}
+
+.modal-body .article-preview-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(100%) contrast(1.1);
+}
+
+.modal-body .article-preview:hover .article-preview-image img {
+  transform: scale(1.02);
+  filter: grayscale(80%) contrast(1.2);
+}
+
+.modal-body .article-preview-content {
+  padding: 16px;
+  text-align: center;
+}
+
+.modal-body .article-preview-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.modal-body .article-preview-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  font-style: italic;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+/* Mobile responsive for modal */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    margin: 2% auto;
+    max-height: 95vh;
+  }
+  
+  .modal-header {
+    padding: 15px;
+  }
+  
+  .modal-header h2 {
+    font-size: 20px;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+  .modal-body .article-preview {
+    max-width: 100%;
+  }
+  
+  .modal-body .article-preview-image {
+    height: 200px;
+  }
+  
+  .modal-body .article-preview-title {
+    font-size: 18px;
+  }
+  
+  .modal-body .article-preview-subtitle {
+    font-size: 13px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 860px) {
+  :root {
+    --padX: 22px;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .bio-image {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .bio-image img {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .bio {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  overflow: auto;
+}
+
+.close-x {
+  display: none;
+}
+
+.modal-content {
+  background: repeating-linear-gradient(
+    to bottom,
+    #ffffff 0px,
+    #ffffff 24px,
+    rgba(0, 0, 0, 0.05) 25px
+  );
+  margin: 5% auto;
+  padding: 40px;
+  border: none;
+  border-radius: 0;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.modal-body {
+  padding: 0;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.modal-body h2 {
+  margin: 0 0 30px 0;
+  font-size: 20px;
+  color: #000;
+  font-weight: 400;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.awards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.award-item {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0 0 24px 0;
+  transition: none;
+}
+
+.award-item:hover {
+  transform: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+.award-item h3 {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.award-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #000;
+  line-height: 24px;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.award-item a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.award-item a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsive for modal */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    max-width: 95%;
+    margin: 10% auto;
+    max-height: 90vh;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+  .modal-body h2 {
+    font-size: 20px;
+  }
+  
+  .awards-list {
+    gap: 12px;
+  }
+  
+  .award-item {
+    padding: 12px;
+  }
+  
+  .award-item h3 {
+    font-size: 15px;
+  }
+  
+  .award-item p {
+    font-size: 13px;
+  }
+  
+  .close-btn {
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    padding: 6px 10px;
+  }
+}
+
+/* Awards Page Styles */
+.awards-layout {
+  padding: 40px var(--padX) 60px;
+  max-width: 800px;
+  margin: 0;
+}
+
+.awards-layout h1 {
+  font-size: 32px;
+  font-weight: 400;
+  color: #000;
+  margin: 0 0 40px 0;
+  line-height: 1.2;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.awards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.award-item {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  transition: all 0.3s ease;
+}
+
+.award-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.award-item h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.award-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.award-item a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.award-item a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsive for awards */
+@media (max-width: 768px) {
+  .awards-layout {
+    padding: 20px var(--padX) 40px;
+  }
+  
+  .awards-layout h1 {
+    font-size: 24px;
+  }
+  
+  .awards-list {
+    gap: 16px;
+  }
+  
+  .award-item {
+    padding: 14px;
+  }
+  
+  .award-item h3 {
+    font-size: 16px;
+  }
+  
+  .award-item p {
+    font-size: 13px;
+  }
+}
+
+/* Notes Page Styles */
+.notes-layout {
+  padding: 40px var(--padX) 60px;
+  max-width: 800px;
+  margin: 0;
+}
+
+.articles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.article-preview {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #000;
+  border-radius: 12px;
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  max-width: 400px;
+  margin: 0;
+  margin-left: 20px;
+  align-self: flex-start;
+}
+
+.article-preview:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.article-preview-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+}
+
+.article-preview-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(100%) contrast(1.1);
+}
+
+.article-preview:hover .article-preview-image img {
+  transform: scale(1.02);
+  filter: grayscale(80%) contrast(1.2);
+}
+
+.article-preview-content {
+  padding: 16px;
+  text-align: center;
+}
+
+.article-preview-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+}
+
+.article-preview-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Full Article Page Styles */
+.article {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.article-title {
+  font-size: 32px;
+  font-weight: 400;
+  color: #000;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.article-subtitle {
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+  font-style: italic;
+}
+
+.article-image {
+  text-align: center;
+  margin: 40px 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.article-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(100%) contrast(1.1);
+}
+
+.article-image img:hover {
+  transform: scale(1.02);
+  filter: grayscale(80%) contrast(1.2);
+}
+
+.article-content {
+  margin-top: 40px;
+}
+
+.article-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  text-align: left;
+  margin: 0;
+}
+
+/* Mobile responsive for notes */
+@media (max-width: 768px) {
+  .notes-layout {
+    padding: 20px var(--padX) 40px;
+  }
+  
+  .article-preview {
+    padding: 16px;
+    max-width: 100%;
+    margin-left: 0;
+  }
+  
+  .article-preview-image {
+    height: 200px;
+  }
+  
+  .article-preview-title {
+    font-size: 18px;
+  }
+  
+  .article-preview-subtitle {
+    font-size: 13px;
+  }
+  
+  .article {
+    padding: 24px;
+  }
+  
+  .article-title {
+    font-size: 24px;
+  }
+  
+  .article-subtitle {
+    font-size: 16px;
+  }
+  
+  .article-text {
+    font-size: 15px;
+  }
+}
+
+/* Extra small mobile */
+@media (max-width: 480px) {
+  :root {
+    --padX: 16px;
+    --padTop: 16px;
+  }
+
+  .page {
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .topbar {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: var(--padTop) var(--padX) 10px;
+  }
+
+  .brand {
+    font-size: 18px;
+    order: 1;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .sigil {
+    order: 2;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px var(--padX) 40px;
+  }
+
+  .bio-image {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .bio-image img {
+    width: 90%;
+    max-width: 250px;
+  }
+
+  .bio {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .footerRow {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    padding: 18px var(--padX) 30px;
+  }
+}

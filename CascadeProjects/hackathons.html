@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Hackathons & Projects - Ayush Rastogi</title>
+    <meta name="description" content="Ayush Rastogi — Hackathons and projects." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@400&family=Merriweather:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <div class="triple-comma">,,,</div>
+        <a class="brand" href="./">Ayush Rastogi</a>
+
+        <nav class="nav">
+          <a href="./notes.html">Notes</a>
+          <a href="./hackathons.html">Hackathons</a>
+          <a href="./awards.html">Awards</a>
+          <a href="#" onclick="openQuotesModal(event)">Favourite Quotes and Tweets</a>
+          <a href="./media/">Movies / Books</a>
+        </nav>
+
+        <button class="sigil" type="button" aria-label="Menu">
+          <span class="sigil__shape" aria-hidden="true"></span>
+        </button>
+      </header>
+
+      <main class="layout">
+        <section class="left">
+          <a href="./hackathons.html" class="section-link">Hackathons</a>
+          <a href="./projects.html" class="section-link">Projects</a>
+        </section>
+
+        <aside class="right" id="about">
+          <div class="bio-image">
+            <img src="./queensboro-bridge.webp" alt="Profile" />
+          </div>
+          
+          <div class="bio">
+            <h3>Healthcare Voice-First AI Agent</h3>
+            <p>Build a multimodal healthcare voice-first agent that does 24/7 post-discharge follow-up, triage, and documentation so nurses can manage 5× more patients without burning out.</p>
+            <p><a href="https://techsavvy.media/en/ai-talents-built-real-products-from-scratch-in-just-36-hours/" target="_blank" rel="noreferrer">News feature can be read here.</a></p>
+          </div>
+        </aside>
+      </main>
+
+      <footer class="footer" id="contact">
+        <div class="footerRow">
+          <div class="triple-comma">,,,</div>
+          <div class="footerCol">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:ayush@example.com">ayush@example.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/ayush" target="_blank" rel="noreferrer">linkedin.com/in/ayush</a></p>
+            <p>Twitter: <a href="https://twitter.com/ayush" target="_blank" rel="noreferrer">@ayush</a></p>
+          </div>
+        </div>
+        <div class="footerRow">
+          <div class="triple-comma">,,,</div>
+          <div class="footerCol">
+            <p>&copy; <span id="y"></span> Ayush Rastogi</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const y = document.getElementById("y");
+      if (y) y.textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

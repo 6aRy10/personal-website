@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Ayush Rastogi</title>
+    <meta name="description" content="Ayush Rastogi — writing and contact." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@400&family=Merriweather:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./hackathons-style.css" />
+    <link rel="stylesheet" href="./awards-style.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <div class="triple-comma">,,,</div>
+        <a class="brand" href="./">Ayush Rastogi</a>
+
+        <nav class="nav">
+          <a href="./notes.html">Notes</a>
+          <a href="./hackathons/">Hackathons</a>
+          <a href="./awards/">Awards</a>
+          <a href="./quotes/">Quotes</a>
+          <a href="./media/">Movies/Books</a>
+        </nav>
+
+        <button class="sigil" type="button" aria-label="Menu">
+          <span class="sigil__shape" aria-hidden="true"></span>
+        </button>
+      </header>
+
+      <main class="layout">
+        <section class="left">
+          <a href="./notes.html" class="section-link">Notes</a>
+          <a href="#" class="section-link" onclick="openHackathonsModal(event)">Hackathons and Projects</a>
+          <a href="./awards.html" class="section-link" onclick="openAwardsModal(event)">Awards</a>
+          <a href="#" class="section-link" onclick="openQuotesModal(event)">Favourite Quotes and Tweets</a>
+          <a href="./media/" class="section-link">Movies / Books</a>
+        </section>
+
+        <aside class="right" id="about">
+          <div class="bio-image">
+            <img src="./queensboro-bridge.webp" alt="Profile" />
+          </div>
+          <p class="bio">
+            Hi, I'm <a href="./Screenshot 2026-02-20 205348.png">Ayush</a>.
+          </p>
+
+          <p class="bio">
+            I was born in <a href="https://en.wikipedia.org/wiki/Moradabad" target="_blank" rel="noreferrer">Moradabad</a> on the birthday of a <a href="https://www.hinduamerican.org/ram-navami" target="_blank" rel="noreferrer">Hindu deity</a>.
+          </p>
+
+          <p class="bio">
+            A series of wonderful and unique moments has shaped my life since.
+          </p>
+
+          <p class="bio">
+            Early on, I fell, upside down, off my home's balcony. However, I just fractured my legs and broke my femur. For a while, not walking again was a real possibility. But I managed to walk again and, even, run faster. Strangely, the accident also improved my stamina and long-distance running.
+          </p>
+
+          <p class="bio">
+            For 7 years, I attended <a href="https://www.stgeorgescollege.in/" target="_blank" rel="noreferrer">St. George's College</a>, a boarding school, located in a hill station named <a href="https://en.wikipedia.org/wiki/Mussoorie" target="_blank" rel="noreferrer">Mussoorie</a>.
+          </p>
+
+          <p class="bio">
+            During this time, I got heavily involved in Table Tennis and Quizzing. I made it to nationals and states for 5 years in both fields, winning numerous awards. The most notable ones included quizzing on National Television for 2 consecutive seasons, finishing in the Top 36/4000 teams at <a href="https://en.wikipedia.org/wiki/Ultimate_Sports_Quiz" target="_blank" rel="noreferrer">USQ</a>.
+          </p>
+
+          <p class="bio">
+            What makes that funnier is that the school barely gave us internet access, and personal electronics were basically not a thing (I did sneak in a phone for my last year in the school, though, subjecting myself to a potential 1500 euro fine. They couldn't catch me).
+          </p>
+
+          <p class="bio">
+            In 2023, I scored 98.6%, the highest % in my school's 66-year-old history, in the <a href="https://en.wikipedia.org/wiki/Council_for_the_Indian_School_Certificate_Examinations" target="_blank" rel="noreferrer">ICSE</a> grade 10 examinations. I was top 10 in my state and likely top 100 in the country. Thanks to my phone!
+          </p>
+
+          <p class="bio">
+            2 months into the junior year of high school, I decided to leave the place because of a few things that had radicalised me. Forever grateful to Parv, Sidhant, Ashesh, Soham, and Shaurya for being there since Day 1 and still being there!
+          </p>
+
+          <p class="bio">
+            In the 2 years that followed, I completed my high school studies in a local school in Moradabad. My attendance rate was tittle, and I mostly self-studied and earned some bucks.
+          </p>
+
+          <p class="bio">
+            I did marketing for an Argentine club, named <a href="https://en.wikipedia.org/wiki/Newell%27s_Old_Boys" target="_blank" rel="noreferrer">Newell's Old Boys</a>, went viral on <a href="https://filmora.wondershare.com/twitter/most-viewed-videos-on-twitter.html" target="_blank" rel="noreferrer">Football Twitter</a>, featured on ESPN, finished Top 100/ 10M+ players in FPL, conducted research on marketing with <a href="https://mgmt.wharton.upenn.edu/profile/shuny/" target="_blank" rel="noreferrer">Shun Yiu</a>, studied for a few olympiads, lead a state NGO, fundraised over $25,000, and worked on issues surrounding sustainability, access to high-quality education, and improving employment rates in my city (<a href="https://www.hindustantimes.com/environment/uttar-pradesh-city-moradabad-is-world-s-2nd-noisiest-city-delhi-kolkata-also-on-un-noise-pollution-list-101648348708558.html" target="_blank" rel="noreferrer">which is one of the most polluted and noisiest in the world</a>).
+          </p>
+
+          <p class="bio">
+            Interactions with <a href="https://www.linkedin.com/in/esatbayar" target="_blank" rel="noreferrer">Esat Bayar</a> convinced me to apply to study abroad and helped me realise what I wish to do in the future.
+          </p>
+
+          <p class="bio">
+            For now, I am at <a href="https://www.unibocconi.eu/" target="_blank" rel="noreferrer">Bocconi University</a> and <a href="https://www.hec.edu/" target="_blank" rel="noreferrer">HEC Paris</a>, taking courses in Data Science, Government and History (I, still, mostly self-study). Being a first-generation student, I am very grateful to my Mom and Dad for giving me such an opportunity.
+          </p>
+
+          <p class="bio">
+            I adore the top-tier material world, playing pickleball and poker, teddy bears, travelling, making comedy films, forecasting future outcomes, and cooking for (and with) people I love.
+          </p>
+
+          <p class="bio">
+            I admire <a href="https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/shah-rukh-khan-now-a-billionaire-bollywood-star-overtakes-taylor-swift-to-become-worlds-richest-entertainer-with-1-4-billion-net-worth/articleshow/124264124.cms" target="_blank" rel="noreferrer">Shah Rukh Khan</a>, Lionel Messi, Novak Djokovic, <a href="https://herbertlui.net/sam-altman-on-self-belief-and-willfulness/" target="_blank" rel="noreferrer">Sam Altman</a>, Naval Ravikant, a few sportswomen, female celebrities and female models.
+          </p>
+        </aside>
+      </main>
+
+      <div class="intentNote">
+        This site is a quiet record of things I build, think about, and grow through.
+      </div>
+
+      <footer class="footer" id="contact">
+        <div class="footerRow">
+          <div class="triple-comma">,,,</div>
+          <span> <span id="y"></span> Ayush Rastogi</span>
+
+          <div class="social">
+            <a
+              class="socialLink"
+              href="https://linkedin.com/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0.5 23.5h4V7.98h-4V23.5zM8.5 7.98h3.83v2.12h.05c.53-1 1.84-2.12 3.79-2.12 4.05 0 4.8 2.67 4.8 6.14v9.38h-4v-8.31c0-1.98-.04-4.53-2.76-4.53-2.76 0-3.18 2.16-3.18 4.39v8.45h-4V7.98z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Hackathons Modal -->
+    <div id="hackathonsModal" class="modal">
+      <div class="modal-content">
+        <div class="window-controls">
+          <div class="window-control close" onclick="closeHackathonsModal(event)" title="Close"></div>
+          <div class="window-control maximize" onclick="toggleHackathonsFullscreen(event)" title="Maximize"></div>
+        </div>
+        <div class="modal-body">
+          <div class="bio-image">
+            <img src="./b3758415-856b-4be5-bbdc-f6964ebe2de6.avif" alt="Healthcare AI Project" />
+          </div>
+          <h2>2nd at Zero2Demo Hackathon</h2>
+          <div class="bio">
+            <p>Build a multimodal healthcare voice-first agent that does 24/7 post-discharge follow-up, triage, and documentation so nurses can manage 5× more patients without burning out.</p>
+            <p><a href="https://techsavvy.media/en/ai-talents-built-real-products-from-scratch-in-just-36-hours/" target="_blank" rel="noreferrer">News feature can be read here.</a></p>
+            <p><a href="https://github.com/6aRy10/Frida" target="_blank" rel="noreferrer">GitHub repository</a></p>
+          </div>
+          
+          <div class="bio-image">
+            <img src="./2202b614-9096-48b5-953a-b364de74a718.avif" alt="Cash Forecasting Project" />
+          </div>
+          <h2>Finalist (Top 5) @ Light x Lovable x QuantumBlack, AI by McKinsey Finance Hackathon</h2>
+          <div class="bio">
+            <p>Build a cash forecasting engine/a cash intelligence system.</p>
+            <p><a href="https://gitto-deploy.vercel.app/" target="_blank" rel="noreferrer">You should try it out here!</a></p>
+          </div>
+          
+          <div class="bio-image">
+            <img src="./9f4d4b48-e923-4590-9b5b-4f323025719f.avif" alt="Splitty Project" />
+          </div>
+          <h2>Notable Project and Best Demo at Agentic Payments Hackathon with Stripe</h2>
+          <div class="bio">
+            <p>Created Splitty to allow restaurant owners to split group bills effortlessly and get paid fast. It automates bill splitting, creates a simple payment page and tracks who has paid, so you never have to follow up.</p>
+          </div>
+          
+          <div class="bio-images">
+            <img src="./WhatsApp Image 2026-02-21 at 18.45.53.jpeg" alt="Splitty Demo 1" onclick="openImageModal('./WhatsApp Image 2026-02-21 at 18.45.53.jpeg')" />
+            <img src="./WhatsApp Image 2026-02-21 at 18.44.21.jpeg" alt="Splitty Demo 2" onclick="openImageModal('./WhatsApp Image 2026-02-21 at 18.44.21.jpeg')" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+      <div class="modal-content">
+        <div class="window-controls">
+          <div class="window-control close" onclick="closeImageModal(event)" title="Close"></div>
+          <div class="window-control maximize" onclick="toggleImageFullscreen(event)" title="Maximize"></div>
+        </div>
+        <div class="modal-body">
+          <img id="modalImage" src="" alt="Full size image" style="width: 100%; height: auto; border-radius: 8px;" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Quotes Modal -->
+    <div id="quotesModal" class="modal">
+      <div class="modal-content">
+        <div class="window-controls">
+          <div class="window-control close" onclick="closeQuotesModal(event)" title="Close"></div>
+          <div class="window-control maximize" onclick="toggleFullscreen(event)" title="Maximize"></div>
+        </div>
+        <div class="modal-body">
+          <h2>Favourite Quotes and Tweets</h2>
+          <div class="quotes-list">
+            <div>
+              <h3>Shah Rukh Khan</h3>
+              <p>"Very often people will tell you that this is not the right thing, this is too big, unachievable, or this is not of your status. But if I take two minutes to think about where I came from and where I stand today, everything feels achievable"</p>
+              <p>"Don't become a philosopher before you are rich. Get all of material gains first. But also be someone incorruptible and honest."</p>
+            </div>
+            <div>
+              <h3>Surya Midha</h3>
+              <p>"The price of getting everything you want is becoming someone you don't quite recognize."</p>
+            </div>
+            <div>
+              <h3>Aristotle</h3>
+              <p>"Love is composed of a single soul inhabiting two bodies."</p>
+            </div>
+            <div>
+              <h3>Naval Ravikant</h3>
+              <p>"If you don't lie awake at night thinking about it, you don't want it badly enough"</p>
+              <p>"A taste of freedom can make you unemployable"</p>
+            </div>
+            <div>
+              <h3>George Bernard Shaw</h3>
+              <p>"The reasonable man adapts himself to the world; the unreasonable one persists in his attempts to adapt the world to himself."</p>
+            </div>
+            <div>
+              <h3>Novak Djokovic</h3>
+              <p>"The winner is one who believes in victory more."</p>
+            </div>
+            <div>
+              <h3>Peter Thiel</h3>
+              <p>"We live in a world, where courage is in less supply than genius."</p>
+              <p>"Winning is better than losing, but everybody loses when war isn't one worth fighting."</p>
+            </div>
+            <div>
+              <h3>Sonya Parker</h3>
+              <p>"Fitting in allows you to blend in with everyone else, but being different allows you to be yourself, to be unique and to be more creative."</p>
+            </div>
+            <div>
+              <h3>Judy Garland</h3>
+              <p>"Always be a first-rate version of yourself, instead of a second-rate version of somebody else."</p>
+            </div>
+            <div>
+              <h3>Aesop</h3>
+              <p>"No act of kindness, no matter how small, is ever wasted."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Quotes Modal -->
+  <div id="quotesModal" class="modal">
+    <div class="modal-content">
+      <div class="window-controls">
+        <div class="window-control close" onclick="closeQuotesModal(event)" title="Close"></div>
+        <div class="window-control maximize" onclick="toggleFullscreen(event)" title="Maximize"></div>
+      </div>
+      <div class="modal-body">
+        <h2>Favourite Quotes and Tweets</h2>
+        <div class="quotes-list">
+          <div>
+            <h3>Shah Rukh Khan</h3>
+            <p>"Very often people will tell you that this is not the right thing, this is too big, unachievable, or this is not of your status. But if I take two minutes to think about where I came from and where I stand today, everything feels achievable"</p>
+            <p>"Don't become a philosopher before you are rich. Get all of material gains first. But also be someone incorruptible and honest."</p>
+          </div>
+          <div>
+            <h3>Surya Midha</h3>
+            <p>"The price of getting everything you want is becoming someone you don't quite recognize."</p>
+          </div>
+          <div>
+            <h3>Aristotle</h3>
+            <p>"Love is composed of a single soul inhabiting two bodies."</p>
+          </div>
+          <div>
+            <h3>Naval Ravikant</h3>
+            <p>"If you don't lie awake at night thinking about it, you don't want it badly enough"</p>
+            <p>"A taste of freedom can make you unemployable"</p>
+          </div>
+          <div>
+            <h3>George Bernard Shaw</h3>
+            <p>"The reasonable man adapts himself to the world; the unreasonable one persists in his attempts to adapt the world to himself."</p>
+          </div>
+          <div>
+            <h3>Novak Djokovic</h3>
+            <p>"The winner is one who believes in victory more."</p>
+          </div>
+          <div>
+            <h3>Peter Thiel</h3>
+            <p>"We live in a world, where courage is in less supply than genius."</p>
+            <p>"Winning is better than losing, but everybody loses when war isn't one worth fighting."</p>
+          </div>
+          <div>
+            <h3>Sonya Parker</h3>
+            <p>"Fitting in allows you to blend in with everyone else, but being different allows you to be yourself, to be unique and to be more creative."</p>
+          </div>
+          <div>
+            <h3>Judy Garland</h3>
+            <p>"Always be a first-rate version of yourself, instead of a second-rate version of somebody else."</p>
+          </div>
+          <div>
+            <h3>Aesop</h3>
+            <p>"No act of kindness, no matter how small, is ever wasted."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Awards Modal -->
+    <div id="awardsModal" class="modal">
+      <div class="modal-content">
+        <div class="window-controls">
+          <div class="window-control close" onclick="closeAwardsModal(event)" title="Close"></div>
+          <div class="window-control maximize" onclick="toggleAwardsFullscreen(event)" title="Maximize"></div>
+        </div>
+        <div class="modal-body">
+          <h2>Awards</h2>
+          <div class="awards-list">
+            <div class="award-item">
+              <h3>19 World Rank - International Economic Olympiad OT</h3>
+            
+            </div>
+            <div class="award-item">
+              <h3>Silver Award - International Business Olympiad</h3>
+      
+            </div>
+            <div class="award-item">
+              <h3>$2300 Grant - Tech European Foundation</h3>
+            
+            </div>
+            <div class="award-item">
+              <h3>Responsible Citizen Award - Indian Achievers Forum of Excellence Records</h3>
+              
+            </div>
+            <div class="award-item">
+              <h3>Bronze Award - Queen's Commonwealth Essay Competition</h3>
+
+            </div>
+            <div class="award-item">
+              <h3>20+ Awards in Quiz Bowl - USQ, Big League, NAQT, and other competitions</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const y = document.getElementById("y");
+      if (y) y.textContent = new Date().getFullYear();
+
+      function openImageModal(imageSrc) {
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+        modalImage.src = imageSrc;
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeImageModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('imageModal');
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+
+      function toggleImageFullscreen(event) {
+        event.preventDefault();
+        const modal = document.getElementById('imageModal');
+        const modalContent = modal.querySelector('.modal-content');
+        
+        if (!document.fullscreenElement) {
+          if (modalContent.requestFullscreen) {
+            modalContent.requestFullscreen();
+          } else if (modalContent.webkitRequestFullscreen) {
+            modalContent.webkitRequestFullscreen();
+          } else if (modalContent.msRequestFullscreen) {
+            modalContent.msRequestFullscreen();
+          }
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+          } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+          }
+        }
+      }
+
+      function openHackathonsModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('hackathonsModal');
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeHackathonsModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('hackathonsModal');
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+
+      function toggleHackathonsFullscreen(event) {
+        event.preventDefault();
+        const modal = document.getElementById('hackathonsModal');
+        const modalContent = modal.querySelector('.modal-content');
+        
+        if (!document.fullscreenElement) {
+          if (modalContent.requestFullscreen) {
+            modalContent.requestFullscreen();
+          } else if (modalContent.webkitRequestFullscreen) {
+            modalContent.webkitRequestFullscreen();
+          } else if (modalContent.msRequestFullscreen) {
+            modalContent.msRequestFullscreen();
+          }
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+          } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+          }
+        }
+      }
+
+      function openAwardsModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('awardsModal');
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeAwardsModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('awardsModal');
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+
+      function toggleAwardsFullscreen(event) {
+        event.preventDefault();
+        const modal = document.getElementById('awardsModal');
+        const modalContent = modal.querySelector('.modal-content');
+        
+        if (!document.fullscreenElement) {
+          if (modalContent.requestFullscreen) {
+            modalContent.requestFullscreen();
+          } else if (modalContent.webkitRequestFullscreen) {
+            modalContent.webkitRequestFullscreen();
+          } else if (modalContent.msRequestFullscreen) {
+            modalContent.msRequestFullscreen();
+          }
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+          } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+          }
+        }
+      }
+
+      function openQuotesModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('quotesModal');
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeQuotesModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('quotesModal');
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+
+      function minimizeModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('quotesModal');
+        const modalContent = modal.querySelector('.modal-content');
+        
+        if (modalContent.classList.contains('minimized')) {
+          // Restore to normal size
+          modalContent.classList.remove('minimized');
+          modalContent.style.transform = 'scale(1)';
+          modalContent.style.width = '90%';
+          modalContent.style.maxWidth = '800px';
+          modalContent.style.height = 'auto';
+          modalContent.style.maxHeight = '90vh';
+        } else {
+          // Minimize to small size
+          modalContent.classList.add('minimized');
+          modalContent.style.transform = 'scale(0.3)';
+          modalContent.style.width = '200px';
+          modalContent.style.maxWidth = '200px';
+          modalContent.style.height = '100px';
+          modalContent.style.maxHeight = '100px';
+          modalContent.style.position = 'fixed';
+          modalContent.style.bottom = '20px';
+          modalContent.style.right = '20px';
+          modalContent.style.top = 'auto';
+          modalContent.style.left = 'auto';
+          modalContent.style.margin = '0';
+        }
+      }
+
+      function toggleFullscreen(event) {
+        event.preventDefault();
+        const modal = document.getElementById('quotesModal');
+        const modalContent = modal.querySelector('.modal-content');
+        
+        if (!document.fullscreenElement) {
+          if (modalContent.requestFullscreen) {
+            modalContent.requestFullscreen();
+          } else if (modalContent.webkitRequestFullscreen) {
+            modalContent.webkitRequestFullscreen();
+          } else if (modalContent.msRequestFullscreen) {
+            modalContent.msRequestFullscreen();
+          }
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+          } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+          }
+        }
+      }
+
+      // Close modal when clicking outside
+      document.addEventListener('click', function(event) {
+        const awardsModal = document.getElementById('awardsModal');
+        const quotesModal = document.getElementById('quotesModal');
+        if (event.target === awardsModal) {
+          closeAwardsModal(event);
+        }
+        if (event.target === quotesModal) {
+          closeQuotesModal(event);
+        }
+      });
+
+      // Prevent event propagation for links
+      document.addEventListener('click', function(event) {
+        if (event.target.tagName === 'A') {
+          event.stopPropagation();
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,824 @@
+:root {
+  --padX: 72px;
+  --padTop: 26px;
+  --hair: rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* NOTEBOOK BACKGROUND */
+body {
+  margin: 0;
+  font-family: "Wix Madefor Text", sans-serif;
+  color: #000;
+  background: repeating-linear-gradient(
+    to bottom,
+    #ffffff 0px,
+    #ffffff 24px,
+    rgba(0, 0, 0, 0.05) 25px
+  );
+}
+
+/* Layout base */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* HEADER */
+.topbar {
+  padding: var(--padTop) var(--padX) 10px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+/* Brand */
+.brand {
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Nav */
+.nav {
+  margin-left: auto;
+  display: flex;
+  gap: 22px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  color: #000;
+}
+
+/* Ring icon */
+.sigil {
+  margin-left: 12px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.sigil__shape {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 999px;
+}
+
+/* Main layout */
+.layout {
+  padding: 10px var(--padX) 60px;
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 90px;
+}
+
+/* SECTION LINKS */
+.section-link {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  color: rgb(0, 0, 0);
+
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 6px 0;
+}
+
+.left a {
+  font-style: italic;
+}
+
+.section-link:hover {
+  opacity: 0.6;
+}
+
+.left a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  line-height: 17px;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 6px 0;
+  font-style: italic;
+}
+
+.left a:hover {
+  opacity: 0.6;
+}
+
+/* Right bio */
+.right {
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.bio-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bio-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #000;
+}
+
+.bio a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.bio a:hover {
+  text-decoration: underline;
+}
+
+.bio {
+  margin-bottom: 18px;
+  font-family: "Wix Madefor Text", sans-serif;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+/* Intent note */
+.intentNote {
+  text-align: center;
+  margin: 50px auto 30px;
+  max-width: 520px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid var(--hair);
+  padding: 18px var(--padX) 20px;
+}
+
+.footerRow {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* Footer Message */
+.footer-message {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #333;
+  font-style: italic;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+/* Footer Clock */
+.footer-clock {
+  text-align: center;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--hair);
+}
+
+.clock-time {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  font-family: "Wix Madefor Text", sans-serif;
+  margin-bottom: 4px;
+}
+
+.clock-message {
+  font-size: 12px;
+  color: #666;
+  font-style: italic;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+/* REAL TRIPLE COMMA */
+.triple-comma {
+  font-style: italic;
+  font-size: 26px;
+  letter-spacing: -2px;
+  transform: perspective(200px) rotateX(8deg);
+  filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.25))
+    drop-shadow(0 4px 6px rgba(0, 0, 0, 0.15));
+}
+
+/* Social icons */
+.social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.socialLink {
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.socialLink svg {
+  display: block;
+  fill: rgb(0, 0, 0);
+}
+
+.socialLink:hover {
+  border-color: rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Window Controls */
+.window-controls {
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.window-control {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.window-control.close {
+  background-color: #ff5f57;
+}
+
+.window-control.close:hover {
+  background-color: #ff3b30;
+}
+
+.window-control.minimize {
+  background-color: #ffbd2e;
+}
+
+.window-control.minimize:hover {
+  background-color: #ff9500;
+}
+
+.window-control.maximize {
+  background-color: #28ca42;
+}
+
+.window-control.maximize:hover {
+  background-color: #00a832;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto;
+  padding: 40px;
+  border: none;
+  border-radius: 0;
+  width: auto;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  font-family: "Wix Madefor Text", sans-serif;
+  position: relative;
+}
+
+.modal-body {
+  padding: 0;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.modal-body h2 {
+  margin: 0 0 30px 0;
+  font-size: 20px;
+  color: #000;
+  font-weight: 400;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.quotes-list {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quotes-list div {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+  border-bottom: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.quotes-list h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.quotes-list p {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #000;
+  line-height: 24px;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.awards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.award-item {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0 0 24px 0;
+  transition: none;
+}
+
+.award-item:hover {
+  transform: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+.award-item h3 {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.award-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #000;
+  line-height: 24px;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.award-item a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.award-item a:hover {
+  text-decoration: underline;
+}
+
+/* Projects and Hackathons Modal Styles */
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.project-category {
+  margin-bottom: 30px;
+}
+
+.project-category h3 {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+  font-family: "Wix Madefor Text", sans-serif;
+  border-bottom: 2px solid #000;
+  padding-bottom: 8px;
+}
+
+.project-category::before {
+  content: '';
+  display: block;
+  border-bottom: 2px solid #000;
+  margin-bottom: 20px;
+}
+
+.project-item {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0 0 30px 0;
+  transition: none;
+}
+
+.project-item h4 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.project-item p {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #000;
+  line-height: 24px;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.project-item img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #000;
+  margin: 0 auto 16px auto;
+  display: block;
+}
+
+.project-item a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.project-item a:hover {
+  text-decoration: underline;
+}
+
+/* Thoughts and Writings Modal Styles */
+.thoughts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.thought-item {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0 0 30px 0;
+  transition: none;
+}
+
+.thought-item img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #000;
+  margin: 0 auto 16px auto;
+  display: block;
+}
+
+.thought-item h4 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+
+.thought-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.project-images-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.project-images-row img {
+  width: auto;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #000;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.project-images-row img:hover {
+  transform: scale(1.05);
+}
+
+/* Movies and Books Modal Styles */
+.movies-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.movies-categories {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.movie-category {
+  flex: 1;
+}
+
+.movie-category h3 {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+  font-family: "Wix Madefor Text", sans-serif;
+  border-bottom: 2px solid #000;
+  padding-bottom: 8px;
+}
+
+.movie-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.movie-item {
+  margin: 0;
+}
+
+.movie-item a {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Wix Madefor Text", sans-serif;
+  line-height: 24px;
+}
+
+.movie-item a:hover {
+  text-decoration: underline;
+}
+
+.movie-note {
+  font-size: 13px;
+  color: #666;
+  font-style: italic;
+  font-family: "Wix Madefor Text", sans-serif;
+  margin-left: 4px;
+}
+
+.books-section {
+  margin-top: 20px;
+}
+
+.books-section h3 {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+  font-family: "Wix Madefor Text", sans-serif;
+  border-bottom: 2px solid #000;
+  padding-bottom: 8px;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.book-item {
+  margin: 0;
+}
+
+.book-item p {
+  margin: 0;
+  font-size: 15px;
+  font-family: "Wix Madefor Text", sans-serif;
+  line-height: 24px;
+  color: #000;
+}
+
+/* Image Modal Styles */
+.image-modal-content {
+  background-color: white;
+  padding: 0;
+}
+
+.image-modal-body {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.image-modal-body img {
+  max-width: 100%;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 860px) {
+  :root {
+    --padX: 22px;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .nav {
+    display: flex;
+    gap: 12px;
+    font-size: 12px;
+  }
+
+  .topbar {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .sigil {
+    margin-left: auto;
+  }
+
+  .bio-image {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .bio-image img {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .bio {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+/* Mobile responsive for modal */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    max-width: 95%;
+    margin: 10% auto;
+    max-height: 90vh;
+    padding: 20px;
+  }
+  
+  .modal-body {
+    padding: 0;
+  }
+  
+  .modal-body h2 {
+    font-size: 20px;
+  }
+  
+  .awards-list {
+    gap: 12px;
+  }
+  
+  .award-item {
+    padding: 0;
+  }
+  
+  .award-item h3 {
+    font-size: 15px;
+  }
+  
+  .award-item p {
+    font-size: 13px;
+  }
+  
+  .movies-categories {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* Extra small mobile */
+@media (max-width: 480px) {
+  :root {
+    --padX: 16px;
+    --padTop: 16px;
+  }
+
+  .page {
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .topbar {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: var(--padTop) var(--padX) 10px;
+    justify-content: space-between;
+  }
+
+  .brand {
+    font-size: 18px;
+    order: 1;
+  }
+
+  .nav {
+    display: flex;
+    gap: 8px;
+    font-size: 11px;
+    order: 3;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 8px;
+  }
+
+  .sigil {
+    order: 2;
+    margin-left: auto;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px var(--padX) 40px;
+  }
+
+  .bio-image {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .bio-image img {
+    width: 90%;
+    max-width: 250px;
+  }
+
+  .bio {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .footerRow {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    padding: 18px var(--padX) 30px;
+  }
+}

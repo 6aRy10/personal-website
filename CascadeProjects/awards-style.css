@@ -1,0 +1,117 @@
+/* Awards Modal Clean Styles - No Boxes or Containers */
+
+/* Override all existing award styles */
+.modal .award-item,
+.modal-body .award-item,
+.awards-modal .award-item,
+div.award-item {
+  background-color: white !important;
+  border: none !important;
+  padding: 15px 0 !important;
+  margin: 0 !important;
+  transition: none !important;
+  transform: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.modal .award-item:hover,
+.modal-body .award-item:hover,
+.awards-modal .award-item:hover,
+div.award-item:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  background: white !important;
+}
+
+.award-item h3 {
+  margin: 0 0 8px 0 !important;
+  font-size: 16px !important;
+  color: rgb(0, 0, 0) !important;
+  font-weight: 400 !important;
+  font-family: "Wix Madefor Text", sans-serif !important;
+  line-height: 21px !important;
+  font-style: normal !important;
+}
+
+.award-item p {
+  margin: 0 !important;
+  font-size: 16px !important;
+  color: rgb(0, 0, 0) !important;
+  line-height: 21px !important;
+  font-family: "Wix Madefor Text", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+/* Quotes section font styling */
+.quotes-list h3,
+.quotes-list p {
+  font-size: 16px !important;
+  color: rgb(0, 0, 0) !important;
+  font-family: "Wix Madefor Text", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  line-height: 21px !important;
+}
+
+.quotes-list h3 {
+  margin: 0 0 8px 0 !important;
+  font-weight: 700 !important;
+  background-color: #f0f0f0 !important;
+  padding: 4px 8px !important;
+  border-radius: 4px !important;
+  display: inline-block !important;
+  font-size: 18px !important;
+}
+
+.quotes-list p {
+  margin: 0 !important;
+}
+
+/* Mobile responsive styling */
+@media (max-width: 768px) {
+  .award-item h3 {
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+  
+  .award-item p {
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+  
+  .quotes-list h3 {
+    font-size: 16px !important;
+    line-height: 20px !important;
+    padding: 3px 6px !important;
+  }
+  
+  .quotes-list p {
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .award-item h3 {
+    font-size: 13px !important;
+    line-height: 17px !important;
+  }
+  
+  .award-item p {
+    font-size: 13px !important;
+    line-height: 17px !important;
+  }
+  
+  .quotes-list h3 {
+    font-size: 15px !important;
+    line-height: 19px !important;
+    padding: 2px 4px !important;
+  }
+  
+  .quotes-list p {
+    font-size: 13px !important;
+    line-height: 17px !important;
+  }
+}
