@@ -1175,6 +1175,22 @@ body.dark-mode .window-control {
   border: none !important;
 }
 
+body.dark-mode .sigil__shape svg path {
+  stroke: #fff !important;
+}
+
+body.dark-mode .dark-mode-icon svg path {
+  stroke: #fff !important;
+}
+
+body.dark-mode .sigil__shape svg {
+  stroke: #fff !important;
+}
+
+body.dark-mode .dark-mode-icon svg {
+  stroke: #fff !important;
+}
+
 /* Recommendation Form Styles */
 .recommend-form {
   max-width: 400px;
