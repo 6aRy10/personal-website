@@ -79,11 +79,20 @@ main {
   width: 26px;
   height: 26px;
   display: inline-block;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
 }
 
 .sigil__shape svg {
   width: 100%;
   height: 100%;
+}
+
+.book-icon {
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
 }
 
 /* Main layout */
