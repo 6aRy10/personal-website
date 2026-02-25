@@ -444,18 +444,8 @@
               </div>
               
               <div class="form-group">
-                <label for="recommendTitle">Title/Name:</label>
-                <input type="text" id="recommendTitle" name="recommendTitle" placeholder="e.g., 'The Alchemist', 'Joe Rogan Podcast', etc." required>
-              </div>
-              
-              <div class="form-group">
-                <label for="recommendAuthor">Author/Creator (optional):</label>
-                <input type="text" id="recommendAuthor" name="recommendAuthor" placeholder="e.g., 'Paulo Coelho', 'Joe Rogan', etc.">
-              </div>
-              
-              <div class="form-group">
-                <label for="recommendMessage">Why do you recommend this? (optional)</label>
-                <textarea id="recommendMessage" name="recommendMessage" rows="4" placeholder="Share your thoughts on why you think I'd enjoy this..."></textarea>
+                <label for="recommendMessage">Message box (optional):</label>
+                <textarea id="recommendMessage" name="recommendMessage" rows="8" placeholder="Share your recommendation, thoughts, or anything you'd like me to know..."></textarea>
               </div>
               
               <div class="form-group">
@@ -910,18 +900,14 @@
         const formData = new FormData(form);
         
         const type = formData.get('recommendType');
-        const title = formData.get('recommendTitle');
-        const author = formData.get('recommendAuthor');
         const message = formData.get('recommendMessage');
         const name = formData.get('recommendName');
         
         // Create email content
-        const emailSubject = `Recommendation: ${type} - ${title}`;
-        let emailBody = `Type: ${type}\n`;
-        emailBody += `Title: ${title}\n`;
-        if (author) emailBody += `Author/Creator: ${author}\n`;
-        if (message) emailBody += `Message: ${message}\n`;
-        if (name) emailBody += `From: ${name}\n`;
+        const emailSubject = `Recommendation: ${type}`;
+        let emailBody = `Type: ${type}\n\n`;
+        if (message) emailBody += `Message: ${message}\n\n`;
+        if (name) emailBody += `From: ${name}`;
         
         // Create mailto link
         const mailtoLink = `mailto:ayush36rastogi@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
