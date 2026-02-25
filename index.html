@@ -927,11 +927,27 @@
               successDiv.style.display = 'none';
             }, 5000);
           } else {
-            alert('Oops! There was a problem submitting your form');
+            // Show error message
+            const successDiv = document.getElementById('recommendSuccess');
+            successDiv.innerHTML = '<p>❌ Oops! There was a problem submitting your form. Please try again.</p>';
+            successDiv.style.display = 'block';
+            setTimeout(() => {
+              successDiv.style.display = 'none';
+              successDiv.innerHTML = '<p>✅ Thank you for your recommendation! I\'ll check it out soon.</p>';
+            }, 5000);
           }
         }).catch(error => {
-          alert('Oops! There was a problem submitting your form');
+          // Show error message
+          const successDiv = document.getElementById('recommendSuccess');
+          successDiv.innerHTML = '<p>❌ Oops! There was a problem submitting your form. Please try again.</p>';
+          successDiv.style.display = 'block';
+          setTimeout(() => {
+            successDiv.style.display = 'none';
+            successDiv.innerHTML = '<p>✅ Thank you for your recommendation! I\'ll check it out soon.</p>';
+          }, 5000);
         });
+        
+        return false;
       }
 
       // Close recommend modal when clicking outside
