@@ -1127,6 +1127,18 @@ body.dark-mode .sigil {
   background: transparent !important;
 }
 
+body.dark-mode .modal-body h3 {
+  color: #fff !important;
+}
+
+body.dark-mode .hackathon-item h4 {
+  color: #fff !important;
+}
+
+body.dark-mode .hackathon-item p {
+  color: #fff !important;
+}
+
 /* Recommendation Form Styles */
 .recommend-form {
   max-width: 400px;
