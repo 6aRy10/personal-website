@@ -34,8 +34,8 @@
           <a href="https://x.com/idoknowball" target="_blank" rel="noreferrer">X</a>
         </nav>
 
-        <button class="sigil" type="button" aria-label="Menu" onclick="scrollToBio()">
-          <span class="sigil__shape" aria-hidden="true"></span>
+        <button class="sigil" type="button" aria-label="Recommendations" onclick="openRecommendModal(event)">
+          <span class="sigil__shape book-icon" aria-hidden="true">📚</span>
         </button>
       </header>
 
@@ -413,6 +413,61 @@
                   <p>The Sovereign Individual</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recommendation Modal -->
+    <div id="recommendModal" class="modal">
+      <div class="modal-content">
+        <div class="window-controls">
+          <div class="window-control close" onclick="closeRecommendModal(event)" title="Close"></div>
+          <div class="window-control maximize" onclick="toggleRecommendFullscreen(event)" title="Maximize"></div>
+        </div>
+        <div class="modal-body">
+          <h2>Recommend Something to Ayush</h2>
+          <div class="recommend-form">
+            <form id="recommendationForm" onsubmit="sendRecommendation(event)">
+              <div class="form-group">
+                <label for="recommendType">Type of recommendation:</label>
+                <select id="recommendType" name="recommendType" required>
+                  <option value="">Select type...</option>
+                  <option value="book">📚 Book</option>
+                  <option value="podcast">🎧 Podcast</option>
+                  <option value="article">📄 Article</option>
+                  <option value="movie">🎬 Movie</option>
+                  <option value="music">🎵 Music</option>
+                  <option value="other">💡 Other</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="recommendTitle">Title/Name:</label>
+                <input type="text" id="recommendTitle" name="recommendTitle" placeholder="e.g., 'The Alchemist', 'Joe Rogan Podcast', etc." required>
+              </div>
+              
+              <div class="form-group">
+                <label for="recommendAuthor">Author/Creator (optional):</label>
+                <input type="text" id="recommendAuthor" name="recommendAuthor" placeholder="e.g., 'Paulo Coelho', 'Joe Rogan', etc.">
+              </div>
+              
+              <div class="form-group">
+                <label for="recommendMessage">Why do you recommend this? (optional)</label>
+                <textarea id="recommendMessage" name="recommendMessage" rows="4" placeholder="Share your thoughts on why you think I'd enjoy this..."></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label for="recommendName">Your name (optional):</label>
+                <input type="text" id="recommendName" name="recommendName" placeholder="So I know who to thank!">
+              </div>
+              
+              <button type="submit" class="send-button">Send Recommendation 📤</button>
+            </form>
+            
+            <div id="recommendSuccess" class="success-message" style="display: none;">
+              <p>✅ Thank you for your recommendation! I'll check it out soon.</p>
             </div>
           </div>
         </div>
@@ -806,6 +861,90 @@
         const articleModal = document.getElementById('articleModal');
         if (event.target === articleModal) {
           closeArticleModal(event);
+        }
+      });
+
+      // Recommendation Modal Functions
+      function openRecommendModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('recommendModal');
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeRecommendModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('recommendModal');
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+
+      function toggleRecommendFullscreen(event) {
+        event.preventDefault();
+        const modal = document.getElementById('recommendModal');
+        const modalContent = modal.querySelector('.modal-content');
+        
+        if (modalContent.classList.contains('maximized')) {
+          // Restore to normal size
+          modalContent.classList.remove('maximized');
+          modalContent.style.width = 'auto';
+          modalContent.style.maxWidth = '600px';
+          modalContent.style.height = 'auto';
+          modalContent.style.maxHeight = '80vh';
+          modalContent.style.margin = '5% auto';
+        } else {
+          // Maximize to full viewport
+          modalContent.classList.add('maximized');
+          modalContent.style.width = '95%';
+          modalContent.style.maxWidth = '95%';
+          modalContent.style.height = '95vh';
+          modalContent.style.maxHeight = '95vh';
+          modalContent.style.margin = '2.5vh auto';
+        }
+      }
+
+      function sendRecommendation(event) {
+        event.preventDefault();
+        
+        const form = document.getElementById('recommendationForm');
+        const formData = new FormData(form);
+        
+        const type = formData.get('recommendType');
+        const title = formData.get('recommendTitle');
+        const author = formData.get('recommendAuthor');
+        const message = formData.get('recommendMessage');
+        const name = formData.get('recommendName');
+        
+        // Create email content
+        const emailSubject = `Recommendation: ${type} - ${title}`;
+        let emailBody = `Type: ${type}\n`;
+        emailBody += `Title: ${title}\n`;
+        if (author) emailBody += `Author/Creator: ${author}\n`;
+        if (message) emailBody += `Message: ${message}\n`;
+        if (name) emailBody += `From: ${name}\n`;
+        
+        // Create mailto link
+        const mailtoLink = `mailto:ayush36rastogi@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+        
+        // Open email client
+        window.location.href = mailtoLink;
+        
+        // Show success message
+        const successDiv = document.getElementById('recommendSuccess');
+        successDiv.style.display = 'block';
+        form.reset();
+        
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+          successDiv.style.display = 'none';
+        }, 5000);
+      }
+
+      // Close recommend modal when clicking outside
+      document.addEventListener('click', function(event) {
+        const recommendModal = document.getElementById('recommendModal');
+        if (event.target === recommendModal) {
+          closeRecommendModal(event);
         }
       });
     </script>

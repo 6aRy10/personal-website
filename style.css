@@ -822,3 +822,83 @@ main {
     padding: 18px var(--padX) 30px;
   }
 }
+
+/* Book Icon Styles */
+.book-icon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* Recommendation Form Styles */
+.recommend-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #000;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--hair);
+  border-radius: 4px;
+  font-family: "Wix Madefor Text", sans-serif;
+  font-size: 14px;
+  background: #fff;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.send-button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-family: "Wix Madefor Text", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+.send-button:hover {
+  background: #333;
+}
+
+.success-message {
+  background: #e8f5e8;
+  border: 1px solid #4caf50;
+  border-radius: 4px;
+  padding: 16px;
+  margin-top: 20px;
+  text-align: center;
+  color: #2e7d32;
+}
+
+.success-message p {
+  margin: 0;
+  font-weight: 500;
+}
