@@ -995,7 +995,12 @@
         const sunIcon = document.querySelector('.sun-icon');
         const moonIcon = document.querySelector('.moon-icon');
         
-        if (darkMode === 'enabled') {
+        // Default to light mode
+        if (darkMode !== 'enabled') {
+          document.body.classList.remove('dark-mode');
+          sunIcon.style.display = 'block';
+          moonIcon.style.display = 'none';
+        } else {
           document.body.classList.add('dark-mode');
           sunIcon.style.display = 'none';
           moonIcon.style.display = 'block';

@@ -1139,6 +1139,42 @@ body.dark-mode .hackathon-item p {
   color: #fff !important;
 }
 
+body.dark-mode * {
+  border-color: #555 !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: #fff !important;
+}
+
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode div {
+  color: #fff !important;
+}
+
+body.dark-mode a {
+  color: #4fc3f7 !important;
+}
+
+body.dark-mode a:hover {
+  color: #81d4fa !important;
+}
+
+body.dark-mode button {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+body.dark-mode .window-control {
+  border: none !important;
+}
+
 /* Recommendation Form Styles */
 .recommend-form {
   max-width: 400px;
