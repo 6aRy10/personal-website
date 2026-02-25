@@ -1103,6 +1103,30 @@ body.dark-mode .book-item img {
   border: 2px solid #fff !important;
 }
 
+body.dark-mode .section-link {
+  color: #fff !important;
+}
+
+body.dark-mode .section-link:hover {
+  color: #ccc !important;
+}
+
+body.dark-mode .sigil__shape svg {
+  stroke: #fff !important;
+}
+
+body.dark-mode .dark-mode-icon svg {
+  stroke: #fff !important;
+}
+
+body.dark-mode .dark-mode-toggle {
+  background: transparent !important;
+}
+
+body.dark-mode .sigil {
+  background: transparent !important;
+}
+
 /* Recommendation Form Styles */
 .recommend-form {
   max-width: 400px;
