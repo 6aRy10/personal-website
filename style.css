@@ -201,9 +201,22 @@ main {
 /* Footer Message */
 .footer-message {
   text-align: center;
-  margin-top: 12px;
+  margin: 15px 0;
   font-size: 14px;
-  color: #333;
+  color: #666;
+}
+
+.footer-message a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-message a:hover {
+  text-decoration: underline;
+}
+
+.footer-message {
   font-style: italic;
   font-family: "Wix Madefor Text", sans-serif;
 }
