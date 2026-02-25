@@ -837,10 +837,14 @@ main {
   .footer .nav {
     text-align: center;
     margin: 15px 0;
+    display: block !important;
+    margin-left: 0 !important;
+    gap: 0 !important;
   }
 
   .footer .nav a {
     margin: 0 8px;
+    display: inline-block;
   }
 }
 
