@@ -1087,6 +1087,22 @@ body.dark-mode .right {
   background: #000 !important;
 }
 
+body.dark-mode img {
+  border: 2px solid #fff !important;
+}
+
+body.dark-mode .bio-image img {
+  border: 2px solid #fff !important;
+}
+
+body.dark-mode .thought-item img,
+body.dark-mode .project-item img,
+body.dark-mode .award-item img,
+body.dark-mode .movie-item img,
+body.dark-mode .book-item img {
+  border: 2px solid #fff !important;
+}
+
 /* Recommendation Form Styles */
 .recommend-form {
   max-width: 400px;
