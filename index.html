@@ -437,7 +437,7 @@
         <div class="modal-body">
           <h2>Recommend Something to Ayush</h2>
           <div class="recommend-form">
-            <form id="recommendationForm" onsubmit="sendRecommendation(event)">
+            <form id="recommendationForm" action="https://formspree.io/f/xqazkvqj" method="POST">
               <div class="form-group">
                 <label for="recommendType">Type of recommendation:</label>
                 <select id="recommendType" name="recommendType" required>
@@ -461,6 +461,7 @@
                 <input type="text" id="recommendName" name="recommendName" placeholder="So I know who to thank!">
               </div>
               
+              <input type="hidden" name="subject" value="Recommendation from your website">
               <button type="submit" class="send-button">Send Recommendation 📤</button>
             </form>
             
@@ -907,31 +908,30 @@
         const form = document.getElementById('recommendationForm');
         const formData = new FormData(form);
         
-        const type = formData.get('recommendType');
-        const message = formData.get('recommendMessage');
-        const name = formData.get('recommendName');
-        
-        // Create email content
-        const emailSubject = `Recommendation: ${type}`;
-        let emailBody = `Type: ${type}\n\n`;
-        if (message) emailBody += `Message: ${message}\n\n`;
-        if (name) emailBody += `From: ${name}`;
-        
-        // Create mailto link
-        const mailtoLink = `mailto:ayush36rastogi@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
-        
-        // Open email client
-        window.location.href = mailtoLink;
-        
-        // Show success message
-        const successDiv = document.getElementById('recommendSuccess');
-        successDiv.style.display = 'block';
-        form.reset();
-        
-        // Hide success message after 5 seconds
-        setTimeout(() => {
-          successDiv.style.display = 'none';
-        }, 5000);
+        // Submit form using Formspree
+        fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        }).then(response => {
+          if (response.ok) {
+            // Show success message
+            const successDiv = document.getElementById('recommendSuccess');
+            successDiv.style.display = 'block';
+            form.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+              successDiv.style.display = 'none';
+            }, 5000);
+          } else {
+            alert('Oops! There was a problem submitting your form');
+          }
+        }).catch(error => {
+          alert('Oops! There was a problem submitting your form');
+        });
       }
 
       // Close recommend modal when clicking outside
