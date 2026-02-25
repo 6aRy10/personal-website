@@ -437,7 +437,7 @@
         <div class="modal-body">
           <h2>Recommend Something to Ayush</h2>
           <div class="recommend-form">
-            <form id="recommendationForm" action="https://formspree.io/f/xojnypll" method="POST">
+            <form id="recommendationForm" action="https://formspree.io/f/xojnypll" method="POST" onsubmit="sendRecommendation(event); return false;">
               <div class="form-group">
                 <label for="recommendType">Type of recommendation:</label>
                 <select id="recommendType" name="recommendType" required>
@@ -956,6 +956,13 @@
         if (event.target === recommendModal) {
           closeRecommendModal(event);
         }
+      });
+
+      // Add submit event listener as backup
+      document.getElementById('recommendationForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        sendRecommendation(event);
+        return false;
       });
     </script>
   </body>
