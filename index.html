@@ -969,11 +969,13 @@
 
       // Dark Mode Toggle Function
       function toggleDarkMode() {
+        console.log('Dark mode toggle clicked!');
         const body = document.body;
         const sunIcon = document.querySelector('.sun-icon');
         const moonIcon = document.querySelector('.moon-icon');
         
         body.classList.toggle('dark-mode');
+        console.log('Dark mode class toggled:', body.classList.contains('dark-mode'));
         
         // Toggle icons
         if (body.classList.contains('dark-mode')) {
@@ -981,11 +983,13 @@
           moonIcon.style.display = 'block';
           // Save preference
           localStorage.setItem('darkMode', 'enabled');
+          console.log('Dark mode enabled');
         } else {
           sunIcon.style.display = 'block';
           moonIcon.style.display = 'none';
           // Save preference
           localStorage.setItem('darkMode', 'disabled');
+          console.log('Dark mode disabled');
         }
       }
 
