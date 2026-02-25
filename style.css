@@ -892,66 +892,74 @@ main {
 
 /* Dark Mode Styles */
 body.dark-mode {
-  background: #000;
-  color: #fff;
+  background: #000 !important;
+  color: #fff !important;
 }
 
 body.dark-mode .page {
-  background: #000;
+  background: #000 !important;
 }
 
 body.dark-mode .brand {
-  color: #fff;
+  color: #fff !important;
 }
 
 body.dark-mode .nav a {
-  color: #ccc;
+  color: #ccc !important;
 }
 
 body.dark-mode .nav a:hover {
-  color: #fff;
+  color: #fff !important;
 }
 
 body.dark-mode .section-link {
-  color: #fff;
+  color: #fff !important;
 }
 
 body.dark-mode .bio {
-  color: #fff;
+  color: #fff !important;
 }
 
 body.dark-mode .bio a {
-  color: #4fc3f7;
+  color: #4fc3f7 !important;
 }
 
 body.dark-mode .bio a:hover {
-  color: #81d4fa;
+  color: #81d4fa !important;
 }
 
 body.dark-mode .sigil__shape svg {
-  stroke: #fff;
+  stroke: #fff !important;
 }
 
 body.dark-mode .dark-mode-icon svg {
-  stroke: #fff;
+  stroke: #fff !important;
 }
 
 body.dark-mode .modal-content {
-  background: #1a1a1a;
-  color: #fff;
-  border: 1px solid #333;
+  background: #1a1a1a !important;
+  color: #fff !important;
+  border: 1px solid #333 !important;
 }
 
 body.dark-mode .window-control.close {
-  background: #f44336;
+  background: #f44336 !important;
 }
 
 body.dark-mode .window-control.maximize {
-  background: #4caf50;
+  background: #4caf50 !important;
 }
 
 body.dark-mode .modal-body h2 {
-  color: #fff;
+  color: #fff !important;
+}
+
+body.dark-mode .modal-body h3 {
+  color: #fff !important;
+}
+
+body.dark-mode .modal-body p {
+  color: #fff !important;
 }
 
 body.dark-mode .thought-item a,
@@ -959,7 +967,7 @@ body.dark-mode .project-item a,
 body.dark-mode .award-item a,
 body.dark-mode .movie-item a,
 body.dark-mode .book-item a {
-  color: #4fc3f7;
+  color: #4fc3f7 !important;
 }
 
 body.dark-mode .thought-item a:hover,
@@ -967,57 +975,116 @@ body.dark-mode .project-item a:hover,
 body.dark-mode .award-item a:hover,
 body.dark-mode .movie-item a:hover,
 body.dark-mode .book-item a:hover {
-  color: #81d4fa;
+  color: #81d4fa !important;
+}
+
+body.dark-mode .thought-item p,
+body.dark-mode .project-item p,
+body.dark-mode .award-item p,
+body.dark-mode .movie-item p,
+body.dark-mode .book-item p {
+  color: #fff !important;
+}
+
+body.dark-mode .thought-item h3,
+body.dark-mode .project-item h3,
+body.dark-mode .award-item h3,
+body.dark-mode .movie-item h3,
+body.dark-mode .book-item h3 {
+  color: #fff !important;
+}
+
+body.dark-mode .form-group label {
+  color: #fff !important;
 }
 
 body.dark-mode .form-group input,
 body.dark-mode .form-group select,
 body.dark-mode .form-group textarea {
-  background: #2a2a2a;
-  color: #fff;
-  border-color: #555;
+  background: #2a2a2a !important;
+  color: #fff !important;
+  border-color: #555 !important;
 }
 
 body.dark-mode .form-group input:focus,
 body.dark-mode .form-group select:focus,
 body.dark-mode .form-group textarea:focus {
-  border-color: #4fc3f7;
+  border-color: #4fc3f7 !important;
+}
+
+body.dark-mode .send-button {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+body.dark-mode .send-button:hover {
+  background: #ccc !important;
+}
+
+body.dark-mode .success-message {
+  background: #2e7d32 !important;
+  border-color: #4caf50 !important;
+  color: #fff !important;
 }
 
 body.dark-mode .footer-message {
-  color: #ccc;
+  color: #fff !important;
 }
 
 body.dark-mode .footer-message a {
-  color: #4fc3f7;
+  color: #4fc3f7 !important;
 }
 
 body.dark-mode .footer-message a:hover {
-  color: #81d4fa;
+  color: #81d4fa !important;
 }
 
 body.dark-mode .footer-clock {
-  border-top-color: #333;
+  border-top-color: #333 !important;
 }
 
 body.dark-mode .clock-time {
-  color: #fff;
+  color: #fff !important;
 }
 
 body.dark-mode .clock-message {
-  color: #ccc;
+  color: #ccc !important;
 }
 
 body.dark-mode .intentNote {
-  color: #fff;
+  color: #fff !important;
 }
 
 body.dark-mode .intentNote a {
-  color: #4fc3f7;
+  color: #4fc3f7 !important;
 }
 
 body.dark-mode .intentNote a:hover {
-  color: #81d4fa;
+  color: #81d4fa !important;
+}
+
+body.dark-mode .triple-comma {
+  color: #fff !important;
+}
+
+body.dark-mode .footerRow span {
+  color: #fff !important;
+}
+
+body.dark-mode .layout {
+  background: #000 !important;
+}
+
+body.dark-mode main {
+  background: #000 !important;
+}
+
+body.dark-mode .left {
+  background: #000 !important;
+}
+
+body.dark-mode .right {
+  background: #000 !important;
 }
 
 /* Recommendation Form Styles */
